@@ -8,13 +8,12 @@ body {
   text-align: center;
   margin: 0;
 }
- h2, h3, h4, {
-   margin: 0;
+ h2, h3, h4 {
+   margin: 0px;
    padding: 10px;
  }
  p {
    margin: 0;
-   padding: 5;
  }
 /*Navigation section*/
 header{
@@ -46,7 +45,7 @@ nav span{
 
 /*Main section*/
 .main {
-  padding-top: 70px;
+  padding-top: 69px;
   width: 1200px;
   margin: 0 auto;
 }
@@ -57,7 +56,9 @@ nav span{
   align-items: center;
 }
   /*Mission subsection*/
+
   #mission {
+    padding-top: 70px;
     height: 700px;
     background-image: url("../images/img-mission-background.jpg");
   }
@@ -68,11 +69,17 @@ nav span{
   }
 
   /*Featured subsection*/
+
   #featured {
+    padding-top: 70px;
     width: 1000px;
+    height: 700px;
     margin: 0 auto;
   }
 
+ #featured p{
+  font-weight: bold;
+}
   .item img {
     width: 300px;
     height: 200px;
@@ -82,3 +89,37 @@ nav span{
   .item {
     padding: 5px;
   }
+
+  /* Locations subsection */
+
+#locations {
+  padding-top: 70px;
+  height: 500px;
+  background-image: url("../images/img-locations-background.jpg");
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 5px 20px;
+  padding: 10px;
+  background-color: black;
+  opacity: 1;
+}
+
+.location p {
+  margin: 22px 0;
+}
+
+/*Contact section*/
+.contact {
+  height: 200px;
+  }
+
+/* Footer section */
+footer {
+  padding-left: 20px;
+  text-align: left;
+}
